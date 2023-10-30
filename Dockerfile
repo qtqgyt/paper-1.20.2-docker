@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 WORKDIR /server
-COPY . .
+COPY paper-1.20.2-260.jar .
 COPY start /bin/
 RUN apt-get update
 RUN apt-get -y install openjdk-17-jdk 
