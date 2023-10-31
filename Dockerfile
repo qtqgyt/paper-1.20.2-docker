@@ -1,6 +1,7 @@
 FROM ubuntu:latest
 WORKDIR /server
 COPY paper-1.20-17.jar .
+RUN chmod +x start
 COPY start /bin/
 RUN apt-get update
 RUN apt-get -y install openjdk-17-jdk 
